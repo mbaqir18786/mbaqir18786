@@ -1,105 +1,86 @@
-<div align="center">
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e293b" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:ea580c&height=200&section=header&text=Mohammed%20Baqir%20Bandarkar&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Developer%20%7C%20Aspiring%20AI%2FML%20Engineer&descAlignY=55&descSize=18" width="100%"/>
+  <!-- background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)" opacity="0.5"/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=EA580C&center=true&vCenter=true&width=600&lines=TY+AI+%26+Data+Science+Student;Tech+Head+%40+KJSCE+Alumni+Cell;Building+products%2C+not+projects;Open+to+Web+Dev+Internships+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
+  <!-- corner crop marks, engineering-drawing style -->
+  <g stroke="#ea580c" stroke-width="2" opacity="0.9">
+    <line x1="24" y1="24" x2="64" y2="24"><animate attributeName="x2" from="24" to="64" dur="0.6s" fill="freeze"/></line>
+    <line x1="24" y1="24" x2="24" y2="64"><animate attributeName="y2" from="24" to="64" dur="0.6s" fill="freeze"/></line>
 
-<br>
+    <line x1="1176" y1="24" x2="1136" y2="24"><animate attributeName="x2" from="1176" to="1136" dur="0.6s" fill="freeze"/></line>
+    <line x1="1176" y1="24" x2="1176" y2="64"><animate attributeName="y2" from="24" to="64" dur="0.6s" fill="freeze"/></line>
 
-![Profile Views](https://komarev.com/ghpvc/?username=mbaqir18&color=ea580c&style=for-the-badge&label=PROFILE+VIEWS)
-![GitHub followers](https://img.shields.io/github/followers/mbaqir18?label=FOLLOWERS&style=for-the-badge&color=0f172a)
+    <line x1="24" y1="296" x2="64" y2="296"><animate attributeName="x2" from="24" to="64" dur="0.6s" fill="freeze"/></line>
+    <line x1="24" y1="296" x2="24" y2="256"><animate attributeName="y2" from="296" to="256" dur="0.6s" fill="freeze"/></line>
 
-</div>
+    <line x1="1176" y1="296" x2="1136" y2="296"><animate attributeName="x2" from="1176" to="1136" dur="0.6s" fill="freeze"/></line>
+    <line x1="1176" y1="296" x2="1176" y2="256"><animate attributeName="y2" from="296" to="256" dur="0.6s" fill="freeze"/></line>
+  </g>
 
-<br>
+  <!-- animated draw-in horizontal baseline under name -->
+  <line x1="80" y1="190" x2="1120" y2="190" stroke="url(#accent)" stroke-width="3" stroke-dasharray="1040" stroke-dashoffset="1040">
+    <animate attributeName="stroke-dashoffset" from="1040" to="0" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </line>
 
-## 🚀 About Me
+  <!-- small dimension ticks along the baseline -->
+  <g stroke="#fb923c" stroke-width="1.5" opacity="0">
+    <animate xlink:href="#ticks" attributeName="opacity" to="1" begin="1.7s" dur="0.4s" fill="freeze"/>
+    <g id="ticks">
+      <line x1="80" y1="184" x2="80" y2="196"/>
+      <line x1="1120" y1="184" x2="1120" y2="196"/>
+    </g>
+  </g>
 
-```yaml
-name: Mohammed Baqir Bandarkar
-role: Tech Head @ Alumni Cell | AI & Data Science Student
-college: KJSCE, Mumbai — Batch 2028
-philosophy: "Build products people actually use, not just projects that sit in a repo"
-currently_building: KickStart 2026 (Alumni Cell React platform)
-looking_for: Web Dev Internships & meaningful collabs
-fun_fact: Explores security topics as a self-taught white-hat hacker
-```
+  <!-- name -->
+  <text x="80" y="150" font-family="'Courier New', monospace" font-size="46" font-weight="700" fill="#f8fafc" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="0.2s" fill="freeze"/>
+    <animate attributeName="y" from="165" to="150" dur="0.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.2 1"/>
+    Mohammed Baqir Bandarkar
+  </text>
 
-<br>
+  <!-- role line, typewriter reveal via clip -->
+  <clipPath id="typeClip">
+    <rect x="0" y="0" height="40" width="0">
+      <animate attributeName="width" from="0" to="760" dur="2.2s" begin="1.6s" fill="freeze"/>
+    </rect>
+  </clipPath>
+  <text x="80" y="222" font-family="'Courier New', monospace" font-size="20" fill="#ea580c" clip-path="url(#typeClip)">
+    &gt; Tech Head @ Alumni Cell — Full Stack + AI/ML — building things people actually use
+  </text>
+  <rect x="80" y="205" width="2" height="22" fill="#ea580c">
+    <animate attributeName="x" from="80" to="840" dur="2.2s" begin="1.6s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="1.6s" repeatCount="indefinite"/>
+  </rect>
 
-## 🌐 Connect With Me
+  <!-- subtitle tag, engineering label style -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="0.6s" begin="3.9s" fill="freeze"/>
+    <rect x="80" y="252" width="150" height="26" rx="3" fill="none" stroke="#334155" stroke-width="1"/>
+    <text x="90" y="269" font-family="'Courier New', monospace" font-size="12" fill="#94a3b8">REV. 2028 · KJSCE</text>
+  </g>
 
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/m_baqir_18/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammed-baqir-bandarkar/)
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:baqirab224@gmail.com)
-
-</div>
-
-<br>
-
-## ⚡ Tech Arsenal
-
-<div align="center">
-
-### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Three.js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
-![Sass](https://img.shields.io/badge/SASS-hotpink?style=for-the-badge&logo=SASS&logoColor=white)
-
-### Backend & Data
-![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
-
-### Tools & Design
-![Figma](https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
-
-<br>
-
-## 📊 GitHub Stats
-
-<div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=mbaqir18&show_icons=true&theme=radical&hide_border=true&bg_color=0f172a&title_color=ea580c&icon_color=ea580c&text_color=ffffff"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mbaqir18&layout=compact&theme=radical&hide_border=true&bg_color=0f172a&title_color=ea580c&text_color=ffffff"/>
-</div>
-
-<div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=mbaqir18&theme=radical&hide_border=true&background=0f172a&ring=ea580c&fire=ea580c&currStreakLabel=ea580c"/>
-</div>
-
-<br>
-
-## 🏆 Trophies
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=mbaqir18&theme=radical&no-frame=true&column=7&margin-w=15&margin-h=15"/>
-</div>
-
-<br>
-
-## 🐍 Contribution Snake
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/mbaqir18/mbaqir18/output/github-contribution-grid-snake.svg"/>
-</div>
-
-<br>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ea580c,100:0f172a&height=100&section=footer"/>
-
-</div>
+  <!-- floating accent dot, subtle idle motion -->
+  <circle cx="1080" cy="70" r="4" fill="#ea580c">
+    <animate attributeName="cy" values="70;62;70" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1105" cy="90" r="3" fill="#fb923c">
+    <animate attributeName="cy" values="90;80;90" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
