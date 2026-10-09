@@ -1,7 +1,7 @@
 # 💫 About Me:
-SY Engineering student | Class of 2028
-Joint Tech Head @ Alumni Cell
-Web Development • Aspiring AI/ML
+TY Engineering student | Class of 2028
+Tech Head @ Alumni Cell
+Web Development • AI/ML/DL
 Quick learner, builder mindset
 Seeking web dev internships & meaningful collaborations <br>
 
