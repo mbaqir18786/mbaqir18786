@@ -1,8 +1,8 @@
 # 💫 About Me:
-TY Engineering student | Class of 2028
-Tech Head @ Alumni Cell
-Web Development • AI/ML/DL
-Quick learner, builder mindset
+TY Engineering student | Class of 2028 <br>
+Tech Head @ Alumni Cell<br>
+Web Development • AI/ML/DL<br>
+Quick learner, builder mindset<br>
 Seeking web dev internships & meaningful collaborations <br>
 
 
